@@ -27,7 +27,7 @@ function onFormSubmit(event) {
 
       .catch(({ position, delay }) => {
         Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
-      });
+      })
 
     delay += step;
   }
@@ -45,4 +45,4 @@ function createPromise(position, delay) {
       }
     }, delay);
   });
-}
+};
